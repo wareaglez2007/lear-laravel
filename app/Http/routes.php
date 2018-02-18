@@ -20,3 +20,8 @@ Route::get('about', function(){
    
    return view('pages.about')->with('people', $people); 
 });
+
+Route::get('portfolio', function(){
+$name = ['herr'=> 'we goe'];
+	return view('pages.portfolio', compact('name'));
+});
